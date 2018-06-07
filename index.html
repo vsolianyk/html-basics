@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>My favorite city - New York</title>
+		<title>My favorite cities</title>
 	</head>
 	<body>
-		<h1>New York city</h1>
-		<div>
-			<img src="images/new-york.jpeg" 
-					 alt="New York photo"
-					 width="200px">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. <b>Duis aute irure dolor</b> in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			<ol>
-				<li>Rome</li>
-				<li>Paris</li>
-				<li>Barselona</li>
-			</ol>
-			
-		</div>
-		<iframe src="https://en.wikipedia.org/wiki/New_York"
-						width="600"
-						height="400"></iframe>
+		<h1>My favorite cities</h1>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Image</th>
+					<th>Contry</th>
+					<th>Name</th>
+					<th>Short description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<a href="google.com"><img src="images/rome.jpeg" alt="Rome photo"></a>
+					</td>
+					<td>Italy</td>
+					<td>Rome</td>
+					<td>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					</td>
+				</tr>
+				<tr>
+					<td><img src="images/paris.jpeg" alt="Paris photo"></td>
+					<td>France</td>
+					<td><a href="index.html" target="_top">Paris</a></td>
+					<td>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					</td>
+				</tr>
+				<tr>
+					<td><img src="images/barselona.png" alt="Barselona photo"></td>
+					<td>Spain</td>
+					<td>Barselona</td>
+					<td>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2">Column on 2 cols</td>
+					<td colspan="2">Column on 2 cols</td>
+				</tr>
+			</tfoot>
+		</table>
 	</body>
 </html>
