@@ -4,50 +4,47 @@
 		<title>My favorite cities</title>
 	</head>
 	<body>
-		<h1>My favorite cities</h1>
-		<table border="1">
-			<thead>
-				<tr>
-					<th>Image</th>
-					<th>Contry</th>
-					<th>Name</th>
-					<th>Short description</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-						<a href="google.com"><img src="images/rome.jpeg" alt="Rome photo"></a>
-					</td>
-					<td>Italy</td>
-					<td>Rome</td>
-					<td>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</td>
-				</tr>
-				<tr>
-					<td><img src="images/paris.jpeg" alt="Paris photo"></td>
-					<td>France</td>
-					<td><a href="index.html" target="_top">Paris</a></td>
-					<td>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</td>
-				</tr>
-				<tr>
-					<td><img src="images/barselona.png" alt="Barselona photo"></td>
-					<td>Spain</td>
-					<td>Barselona</td>
-					<td>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					</td>
-				</tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<td colspan="2">Column on 2 cols</td>
-					<td colspan="2">Column on 2 cols</td>
-				</tr>
-			</tfoot>
-		</table>
+		<form action="#" name="signIn" method="POST">
+			<fieldset>
+				<label>First name:</label>
+				<input type="text" name="firstName" placeholder="First name" required>
+			</fieldset>
+			<fieldset>
+				<label>Last name:</label>
+				<input type="text" name="lastName" placeholder="Last name" required>
+			</fieldset>
+			<fieldset>
+				<label for="email">Email:</label>
+				<input id="email" type="email" name="email" placeholder="Email" required>
+			</fieldset>
+			<fieldset>
+				<label>Gender:</label>
+				<label for="male">
+					<input id="male" type="radio" name="gender" value="male">Male
+				</label>
+				<label for="female">
+					<input id="female" type="radio" name="gender" value="female">Female
+				</label>
+			</fieldset>
+			<fieldset>
+				<label for="birthday">Birthday:</label>
+				<input id="birthday" type="date" name="birthday" placeholder="Birthday">
+			</fieldset>
+			<fieldset>
+				<label for="color">Your favourite color:</label>
+				<input id="color" type="color" name="color" value="#ff0000">
+			</fieldset>
+			<fieldset>
+				<label for="description">About your self:</label>
+				<textarea id="description" name="description" cols="30" rows="5" value="I am cool"></textarea>
+			</fieldset>
+			<fieldset>
+				<label for="agree">I agree with Terms of use</label>
+				<input id="agree" type="checkbox" name="agree" value="true" checked required>
+			</fieldset>
+			<fieldset>
+				<button type="submit">Register</button>
+			</fieldset>
+		</form>
 	</body>
 </html>
